@@ -52,7 +52,7 @@ agents = {
     "Writer": {
         "name": "Chief Writer (Writer)",
         "icon": "✍️",
-        "role_desc": "You are the [Chief Writer]. Summarize all the viewpoints of the above experts (especially the Operations Architect's tree chart), and write a well-structured 'Business Model Analysis Executive Summary'. It MUST include: 1. Project Overview 2. Advantage Analysis 3. Risks 4. Organizational Structure Tree 5. Final Investment Recommendation."
+        "role_desc": "You are the [Chief Writer]. Summarize all the viewpoints of the above experts (especially the Operations Architect's tree chart), and write a well-structured 'Business Model Analysis Executive Summary'. It MUST include: 1. Project Overview 2. Advantage Analysis 3. Risks 4. Organizational Structure Tree 5. Final Investment Recommendation. \n\n🚨 CRITICAL FORMATTING RULE: Absolutely DO NOT use asterisks (*) or markdown bullet points anywhere in your response. You MUST use explicit numbered lists (1., 2., 3., etc.) for all points and sub-points. Keep the text clean, formal, and strictly numbered."
     }
 }
 
@@ -133,7 +133,7 @@ if start_btn:
     if not uploaded_files:
         st.warning("👈 Please upload at least one file on the left sidebar!")
     else:
-        st.subheader("📚 Phase 1: Data Digestion (Intern Agent)")
+        st.subheader("📚 Phase 1: Data Process")
         all_compressed_context = ""
         
         for uploaded_file in uploaded_files:
