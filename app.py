@@ -92,7 +92,7 @@ def summarize_long_text(text, filename):
             model=MODEL_NAME,
             messages=messages,
             temperature=0.3,
-            max_tokens=4000
+            max_tokens=1500
         )
         return response.choices[0].message.content
     except Exception as e:
