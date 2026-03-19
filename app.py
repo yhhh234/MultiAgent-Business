@@ -120,7 +120,7 @@ with st.sidebar:
     )
     
     # 🚨 新增：自定义指令输入框
-    st.header("🎯 Custom Instructions")
+    st.header("🎯 Sentence Input")
     custom_instruction = st.text_area(
         "Any specific focus? (Optional)", 
         placeholder="e.g., Focus heavily on the competitor analysis, or pay special attention to financial risks...",
